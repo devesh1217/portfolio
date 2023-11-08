@@ -1,0 +1,44 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #010525;
+}
+* {
+  font-family: "Signika Negative", sans-serif;
+}
+button{
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+#top{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  opacity: 40%;
+  z-index: 99;
+}
+#top:hover{
+  opacity: 60%;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+#top:active{
+  transform: translateY(5px);
+}
+#top img{
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 117, 179);
+  border-radius: 5px;
+}
