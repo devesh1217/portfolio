@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.34f2d827.css",
-    "main.js": "/portfolio/static/js/main.28b98e92.js",
+    "main.js": "/portfolio/static/js/main.e45c19f9.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/line follower1.jpg": "/portfolio/static/media/line follower1.72544b476790f74f2706.jpg",
     "static/media/healthify.in.png": "/portfolio/static/media/healthify.in.f6a5f8fbf35204cbd784.png",
@@ -21,11 +21,11 @@
     "static/media/top.png": "/portfolio/static/media/top.4204e654667c43bc4590.png",
     "index.html": "/portfolio/index.html",
     "main.34f2d827.css.map": "/portfolio/static/css/main.34f2d827.css.map",
-    "main.28b98e92.js.map": "/portfolio/static/js/main.28b98e92.js.map",
+    "main.e45c19f9.js.map": "/portfolio/static/js/main.e45c19f9.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34f2d827.css",
-    "static/js/main.28b98e92.js"
+    "static/js/main.e45c19f9.js"
   ]
 }
