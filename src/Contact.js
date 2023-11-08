@@ -33,7 +33,7 @@ function Contact() {
             .then((response) => response.json())
             
             .then((data) => {
-                console.log('hi')
+                console.log(data)
                 alert('Mail sent')
             })
             .catch((error) => {
