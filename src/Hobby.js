@@ -13,7 +13,7 @@ function Hobby({isHobbyOpen,setHobbyOpen}) {
     return (
         <div className="intro-card" id="hobbies">
             <div className="intro-card-title" data-aos="zoom-in-up" data-aos-duration="1000" onClick={handleClick}>
-                #Hobbies{(isHobbyOpen)?<span className="up">▲</span>:<span className="down">▼</span>}
+                #Hobbies<span className="up" style={{transform:(isHobbyOpen)?'':'rotate(180deg)'}}>▲</span>
             </div>
             <div className="intro-card-detail" style={{display:(isHobbyOpen)?'block':'none'}}>
                 <ul id="hobby-list">

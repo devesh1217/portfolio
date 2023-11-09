@@ -14,7 +14,7 @@ function Soft({isSoftOpen,setSoftOpen}) {
     return (
         <div className="intro-card" id="soft-skill" data-aos="zoom-in-up" data-aos-duration="1000">
                     <div className="intro-card-title" onClick={handleClick}>
-                        #SoftSkills{(isSoftOpen)?<span className="up">▲</span>:<span className="down">▼</span>}
+                        #SoftSkills<span className="up" style={{transform:(isSoftOpen)?'':'rotate(180deg)'}}>▲</span>
                     </div>
                     <div className="intro-card-detail" data-aos="zoom-in-up" data-aos-duration="1000" style={{display:(isSoftOpen)?'block':'none'}}>
                         <ul id="soft-skill-list">

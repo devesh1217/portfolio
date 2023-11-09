@@ -36,7 +36,7 @@ function Tech({isTechOpen,setTechOpen}) {
     return (
         <div className="intro-card" id="tech-skill">
             <div className="intro-card-title" data-aos="zoom-in-up" data-aos-duration="1000" onClick={handleClick}>
-                #TechnicalSkills{(isTechOpen)?<span className="up">▲</span>:<span className="down">▼</span>}
+                #TechnicalSkills<span className="up" style={{transform:(isTechOpen)?'':'rotate(180deg)'}}>▲</span>
             </div>
             <div className="intro-card-detail" id="tech-skill" style={{display:(isTechOpen)?'block':'none'}}>
                 <ul id="tech-skill-list">

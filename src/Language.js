@@ -13,7 +13,7 @@ function Language({isLangOpen,setLangOpen}) {
     return (
         <div className="intro-card" id="language" data-aos="zoom-in-up" data-aos-duration="1000">
             <div className="intro-card-title" onClick={handleClick}>
-                #LanguagesKnown{(isLangOpen)?<span className="up">▲</span>:<span className="down">▼</span>}
+                #LanguagesKnown<span className="up" style={{transform:(isLangOpen)?'':'rotate(180deg)'}}>▲</span>
             </div>
             <div className="intro-card-detail" style={{display:(isLangOpen)?'block':'none'}}>
                 <ul id="lang-list">
