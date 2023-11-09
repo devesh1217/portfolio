@@ -5,17 +5,27 @@ import html from './Photo/html.png'
 import css from './Photo/css.png'
 import js from './Photo/js.png'
 import git from './Photo/git.png'
+import flask from './Photo/flask.png'
 import react from './Photo/reactIcon.png'
 import yt from './Photo/youtube.png'
 import arduino from './Photo/arduino.png'
 import healthify from './Photo/healthify.in.png'
 import portfolio from './Photo/portfolio.png'
+import expense from './Photo/expense.png'
 import LineFollwer from './Photo/line follower1.jpg'
 import Typed from 'react-typed'
 
 function Work() {
     const [project] = useState(
         [
+            {
+                name:'Personal Expense Manager',
+                tech:[html,css,js,react,flask],
+                link:'',
+                linkIcon:git,
+                image:expense,
+                desc:'Full Stack Project to manage persoanl income/expenses'
+            },
             {
                 name:'Personal Portfolio Website',
                 tech:[html,css,js,react],
@@ -60,7 +70,7 @@ function Work() {
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc">{curr.desc}</div>
                                     <div className="proj-tech">Project Technologies: {curr.tech.map((icon)=>{
-                                        return(<img src={icon} title={String(icon)} alt="HTML" />)
+                                        return(<img src={icon} alt="HTML" style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
                                     })}</div>
                                     <div className="proj-link">Project Link: <a target="_blank"
                                         href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"
@@ -81,7 +91,7 @@ function Work() {
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc">{curr.desc}</div>
                                     <div className="proj-tech">Project Technologies: {curr.tech.map((icon)=>{
-                                        return(<img src={icon} alt="HTML" />)
+                                        return(<img src={icon} alt="HTML" style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
                                     })}</div>
                                     <div className="proj-link">Project Link: <a target="_blank"
                                         href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"

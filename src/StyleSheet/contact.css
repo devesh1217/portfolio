@@ -118,6 +118,12 @@
 #cp a{
     color: rgb(182, 190, 206);
 }
+#msg-box{
+    color: rgb(161, 161, 161);
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
 @media screen and (width<1000px) {
     #contact-content{
         flex-direction: column;

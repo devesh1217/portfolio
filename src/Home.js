@@ -23,7 +23,7 @@ export default function Home() {
                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/devesh_1217/"><img src={insta}
                         alt="Instagram" /></a>
                     <a target="_blank" rel="noreferrer"
-                        href="https://www.canva.com/design/DAFt9T5c3vk/GolOZY_DMOJm_K4MR_Y-Ig/view?utm_content=DAFt9T5c3vk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><img
+                        href="https://drive.google.com/file/d/1tk9GDpLO5NnjHXecfvpXQExENsQlLd7X/view?usp=sharing"><img
                             src={download} alt="Resume" title="Resume" /></a>
                 </div>
             </div>

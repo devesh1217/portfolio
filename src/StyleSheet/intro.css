@@ -91,6 +91,7 @@
 }
 #tech-skill-list{
     list-style:  '👨🏻‍💻';
+    padding-left: 90px;
 }
 .bg-line{
     margin-top: 5px;
@@ -112,6 +113,7 @@
 }
 #soft-skill-list{
     list-style:  '🧑🏻‍💼';
+    padding-left: 90px;
 }
 .soft-skill-desc{
     color: #5b667a;
@@ -157,8 +159,11 @@
         font-size: 20px;
         margin-left: 0;
     }
-    #hobby-list,#lang-list,#soft-skill-list,#tech-skill-list{
+    #hobby-list,#lang-list{
         padding-left: 0;
+    }
+    #soft-skill-list,#tech-skill-list{
+        padding-left: 40px;
     }
     #who{
         font-size: 36px;

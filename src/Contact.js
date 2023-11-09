@@ -23,6 +23,7 @@ function Contact() {
     
     const handleSubmit=(event)=>{
         event.preventDefault();
+        setMsg('Sending your query...')
         fetch("https://flask-mail-4rtz.onrender.com/send_emails", {
             method: "POST",
             headers: {
@@ -33,8 +34,7 @@ function Contact() {
             .then((response) => response.json())
             
             .then((data) => {
-                console.log(data)
-                alert('Mail sent')
+                setMsg('Your query sent successfully.')
             })
             .catch((error) => {
                 console.error("Error fetching data:", error);
@@ -58,6 +58,7 @@ function Contact() {
     //         })
     //     }
     // }
+    const [msg,setMsg]=useState('')
     return (
         <div id="contact-box">
             <h1 id="who" data-aos="zoom-in-up" data-aos-duration="1000">Liked my profile? {(window.innerWidth<1000)?<br/>:''}<span className='typed-text'><Typed strings={['You can find me here...']} typeSpeed={150} loopCount={1}/></span>
@@ -84,12 +85,13 @@ function Contact() {
                         </fieldset>
                         <fieldset>
                             <legend>Query*</legend>
-                            <textarea name="query" id="msg" cols="30" rows="3" required onChange={handleChange}></textarea>
+                            <textarea name="msg" id="query" cols="30" rows="3" required onChange={handleChange}></textarea>
                         </fieldset>
                         <div id="contact-form-submit">
                             <input type="submit" name="Submit" value="Submit" onSubmit={handleSubmit}/>
                             <input type="reset" value="Reset" />
                         </div>
+                        <div id='msg-box'>{msg}</div>
                     </form>
                 </div>
                 <div id="contact-down">
@@ -108,7 +110,7 @@ function Contact() {
                     <h2 id="contact-form-title" data-aos="zoom-in-up" data-aos-duration="1000">Resume</h2>
                     <ul id="contact-list">
                         <li data-aos="zoom-in-up" data-aos-duration="1000" href="#"><a target="_blank" rel="noreferrer"
-                                href="https://www.canva.com/design/DAFt9T5c3vk/GolOZY_DMOJm_K4MR_Y-Ig/view?utm_content=DAFt9T5c3vk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><img src={download}
+                                href="https://drive.google.com/file/d/1tk9GDpLO5NnjHXecfvpXQExENsQlLd7X/view?usp=sharing"><img src={download}
                             alt="Download Resume" />Download
                                 Resume</a></li>
                     </ul>
