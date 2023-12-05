@@ -13,6 +13,7 @@ import healthify from './Photo/healthify.in.png'
 import portfolio from './Photo/portfolio.png'
 import expense from './Photo/expense.png'
 import LineFollwer from './Photo/line follower1.jpg'
+import oracle from './Photo/oracle.png'
 import Typed from 'react-typed'
 
 function Work() {
@@ -20,7 +21,8 @@ function Work() {
         [
             {
                 name:'Personal Expense Manager',
-                tech:[html,css,js,react,flask],
+                tech:[react,flask,oracle],
+                title:['React','Flask','Oracle Database'],
                 link:'',
                 linkIcon:git,
                 image:expense,
@@ -29,6 +31,7 @@ function Work() {
             {
                 name:'Personal Portfolio Website',
                 tech:[html,css,js,react],
+                title:['HTML','CSS','JavaScript','React'],
                 link:'https://devesh1217.github.io/portfolio',
                 linkIcon:git,
                 image:portfolio,
@@ -37,6 +40,7 @@ function Work() {
             {
                 name:'Health & Welness Website',
                 tech:[html,css,js],
+                title:['HTML','CSS','JavaScript'],
                 link:'https://devesh1217.github.io/healthify.in/',
                 linkIcon:git,
                 image:healthify,
@@ -45,7 +49,8 @@ function Work() {
             {
                 name:'Line Following Bot',
                 tech:[arduino],
-                link:'#',
+                title:['Arduino'],
+                link:'https://youtu.be/1WXcGlSE720',
                 linkIcon:yt,
                 image:LineFollwer,
                 desc:''
@@ -69,8 +74,8 @@ function Work() {
                                 <div className="proj-detail" data-aos="zoom-in-right" data-aos-duration="1000">
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc">{curr.desc}</div>
-                                    <div className="proj-tech">Project Technologies: {curr.tech.map((icon)=>{
-                                        return(<img src={icon} alt="HTML" style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
+                                    <div className="proj-tech">Project Technologies: {curr.tech.map((icon,indx)=>{
+                                        return(<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
                                     })}</div>
                                     <div className="proj-link">Project Link: <a target="_blank"
                                         href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"
@@ -90,8 +95,8 @@ function Work() {
                                 <div className="proj-detail" data-aos="zoom-in-right" data-aos-duration="1000">
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc">{curr.desc}</div>
-                                    <div className="proj-tech">Project Technologies: {curr.tech.map((icon)=>{
-                                        return(<img src={icon} alt="HTML" style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
+                                    <div className="proj-tech">Project Technologies: {curr.tech.map((icon,indx)=>{
+                                        return(<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{width:(curr.linkIcon===flask)?'45px':'30px'}}/>)
                                     })}</div>
                                     <div className="proj-link">Project Link: <a target="_blank"
                                         href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"
