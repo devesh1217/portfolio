@@ -20,7 +20,7 @@ function Nav({setTechOpen, setSoftOpen, setHobbyOpen, setLangOpen,} ) {
     }
     return (
         <>            
-            <nav className="nav-bar">
+            <nav className="nav-bar" style={{display:(isOpen)?'none':'flex'}}>
                 <div className="left">
                     <a id="nav-name" href="#header-box"><span id="dev">Dev</span>esh <span id="me">Me</span>hta's <span className="blue">Portfolio</span></a>
                 </div>
@@ -38,7 +38,7 @@ function Nav({setTechOpen, setSoftOpen, setHobbyOpen, setLangOpen,} ) {
                     </div>
                     <a className="nav-menu" href="#edu-box">Education</a>
                     <div className="nav-menu" href="#work-box" onMouseEnter={workBtnClick} onMouseLeave={workBtnClick}>
-                        Wrok
+                        Work
                         <div className="menu-hover" style={{display:(work)?'flex':'none'}}>
                             <a className="menu-hover-item1" href="#work-box">#Work</a>
                             <a className="menu-hover-item1" href="#work-content2">#Project </a>

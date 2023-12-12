@@ -16,7 +16,7 @@ function Mobile({ isOpen, setIsOpen, handleClick }) {
                 <a className="mobile-menu" href="#header-box" onClick={handleClick}> Home</a>
                 <a className="mobile-menu" href="#intro-box" onClick={handleClick}>About Me</a>
                 <a className="mobile-menu" href="#edu-box" onClick={handleClick}>Education</a>
-                <a className="mobile-menu" href="#work-box" onClick={handleClick}>Wrok</a>
+                <a className="mobile-menu" href="#work-box" onClick={handleClick}>Work</a>
                 <a className="mobile-menu" href="#contact-box" onClick={handleClick}>Contact Me</a>
             </div>
             <div id="menu-bottom">
