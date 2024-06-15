@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3a74bb74.css",
-    "main.js": "/portfolio/static/js/main.de8adc85.js",
+    "main.js": "/portfolio/static/js/main.6f01b2d5.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/line follower1.jpg": "/portfolio/static/media/line follower1.72544b476790f74f2706.jpg",
     "static/media/healthify.in.png": "/portfolio/static/media/healthify.in.f6a5f8fbf35204cbd784.png",
@@ -12,9 +12,9 @@
     "static/media/git.png": "/portfolio/static/media/git.b59201ef2ff446316717.png",
     "static/media/download.png": "/portfolio/static/media/download.f000117747694914e55c.png",
     "static/media/expense.png": "/portfolio/static/media/expense.dc46dd3459ed38dd2bea.png",
+    "static/media/educate.png": "/portfolio/static/media/educate.7c19407c3147d8428a82.png",
     "static/media/clipart.webp": "/portfolio/static/media/clipart.1b0e040138ea23fac6ae.webp",
     "static/media/js.png": "/portfolio/static/media/js.37accbff33c7b4c9101b.png",
-    "static/media/oracle.png": "/portfolio/static/media/oracle.e7bc0f6672d8f1869ac3.png",
     "static/media/html.png": "/portfolio/static/media/html.9b674892ef5960bafca3.png",
     "static/media/insta.webp": "/portfolio/static/media/insta.30c870799f1cf263e222.webp",
     "static/media/css.png": "/portfolio/static/media/css.8ea58d31a9d39dd59031.png",
@@ -23,11 +23,11 @@
     "static/media/top.png": "/portfolio/static/media/top.4204e654667c43bc4590.png",
     "index.html": "/portfolio/index.html",
     "main.3a74bb74.css.map": "/portfolio/static/css/main.3a74bb74.css.map",
-    "main.de8adc85.js.map": "/portfolio/static/js/main.de8adc85.js.map",
+    "main.6f01b2d5.js.map": "/portfolio/static/js/main.6f01b2d5.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a74bb74.css",
-    "static/js/main.de8adc85.js"
+    "static/js/main.6f01b2d5.js"
   ]
 }
