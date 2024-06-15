@@ -79,11 +79,11 @@
   margin-top: 20px;
 }
 .yellow {
-  color: rgb(241, 180, 24);
+  color: #f1b418;
   font-weight: 700;
 }
 .blue {
-  color: rgb(130, 188, 251);
+  color: #82bcfb;
   font-weight: 700;
 }
 @media screen and (width<1000px) {
