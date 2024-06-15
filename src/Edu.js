@@ -9,7 +9,7 @@ function Edu() {
                 classNameFull:'BTech (Computer Science & Engineering)',
                 classNameShort:'BTech (CSE)',
                 year:'2026',
-                mark:'9.59 CGPA(Sem II)',
+                mark:'9.19 CGPA(Sem IV)',
                 instituteFull:'Saradar Vallabhbhai National Institute of Technology, Surat',
                 instituteShort:'SVNIT, Surat'
             },

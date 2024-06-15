@@ -6,24 +6,21 @@ import html from './Photo/html.png'
 import css from './Photo/css.png'
 import js from './Photo/js.png'
 import react from './Photo/reactIcon.png'
-import flask from './Photo/flask.png'
 import java from './Photo/java.png'
 import sql from './Photo/sql.png'
 import py from './Photo/py.png'
-import cpp from './Photo/cpp.png'
-import android from './Photo/android.png'
+import mongodb from './Photo/mongo.png'
+import expressjs from './Photo/express.png'
+import nodejs from './Photo/node.png'
 
 
 function Tech({isTechOpen,setTechOpen}) {
     const [techSkill] = useState([
         ['Java',90,[java]],
         ['HTML,CSS & JavaScript',85,[html,css,js]],
-        ['ReactJS',55,[react]],
-        ['Falsk',30,[flask]],
-        ['C++',70,[cpp]],
+        ['MERN Stck',95,[mongodb,expressjs,react,nodejs]],
         ['Python',80,[py]],
         ['SQL',80,[sql]],
-        ['Android Development',5,[android]]
     ]);
 
     const handleClick=()=>{
