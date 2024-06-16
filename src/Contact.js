@@ -29,22 +29,6 @@ function Contact() {
 
         setMsg('Sending your query...')
 
-        // fetch("https://flask-mail-4rtz.onrender.com/send_emails", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(formData),
-        // })
-        //     .then((response) => response.json())
-
-        //     .then((data) => {
-        //         setMsg('Your query sent successfully.')
-        //     })
-        //     .catch((error) => {
-        //         console.error("Error fetching data:", error);
-        //     });
-
         try {
             const { name, email, org, phone, msg } = formData;
             await emailjs.send('Portfolio', 'default', {
@@ -73,24 +57,7 @@ function Contact() {
         }
 
     }
-    // const handleSubmit=(event)=>{
-    //     const config={
-    //         SecureToken:'3069cc02-eeb0-443b-8a83-04a018bb77f6',
-    //         Port: 587,
-    //         To : 'devesh1217@yahoo.com',
-    //         From : "u22cs035@coed.svnit.ac.in",
-    //         Subject : "This is the subject",
-    //         Body : `Name:${formData.name}\n'email':${formData.email}\n'org':${formData.org}\n'phone':${formData.phone}\n'msg':${formData.msg}`
-    //     }
-    //     console.log('hi')
-    //     event.preventDefault();
-    //     console.log('hi')
-    //     if(window.Email){
-    //         window.Email.send(config).then(()=>{
-    //             alert('Email sent!')
-    //         })
-    //     }
-    // }
+    
     const [msg, setMsg] = useState('')
     return (
         <div id="contact-box">
