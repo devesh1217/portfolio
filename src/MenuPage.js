@@ -13,12 +13,12 @@ function ManuPage() {
                 <a class="mobile-menu" href="#contact-box" onclick="javascript:menuOFF();">Contact Me</a>
                 <div id="menu-bottom">
                     <div id="mobile-social">
-                        <a target="_blank" href="https://www.linkedin.com/in/devesh1217/"><img src="Photo/linkedin.png"
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devesh1217/"><img src="Photo/linkedin.png"
                             alt="linkedin" /></a>
-                        <a target="_blank" href="https://github.com/devesh1217"><img src="Photo/git.png" alt="GitHub" /></a>
-                        <a target="_blank" href="https://www.instagram.com/devesh_1217/"><img src="Photo/insta.webp"
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/devesh1217"><img src="Photo/git.png" alt="GitHub" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devesh_1217/"><img src="Photo/insta.webp"
                             alt="Instagram" /></a>
-                        <a target="_blank"
+                        <a target="_blank" rel="noopener noreferrer"
                             href="https://www.canva.com/design/DAFt9T5c3vk/GolOZY_DMOJm_K4MR_Y-Ig/view?utm_content=DAFt9T5c3vk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><img
                                 src="Photo/download.png" alt="Download Resume" title="Download Resume" /></a>
                     </div>

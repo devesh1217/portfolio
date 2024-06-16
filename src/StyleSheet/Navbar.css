@@ -100,7 +100,7 @@
   transition: transform 0.5s ease;
 }
 
-@media screen and (width<1000px) {
+@media screen and (orientation : portrait) {
   #nav-name{
     font-size: 25px;
   }

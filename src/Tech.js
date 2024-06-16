@@ -17,7 +17,7 @@ import nodejs from './Photo/node.png'
 function Tech({isTechOpen,setTechOpen}) {
     const [techSkill] = useState([
         ['Java',90,[java]],
-        ['HTML,CSS & JavaScript',85,[html,css,js]],
+        [`HTML,CSS & ${window.innerWidth>1000 ? 'JavaScript' : 'JS'}`,85,[html,css,js]],
         ['MERN Stck',95,[mongodb,expressjs,react,nodejs]],
         ['Python',80,[py]],
         ['SQL',80,[sql]],
@@ -49,8 +49,8 @@ function Tech({isTechOpen,setTechOpen}) {
                                 {curr[0]}
                                 <div className='tech-icons'>
                                     {
-                                        curr[2].map((i)=>{
-                                            return <img src={i} style={{width:(window.innerWidth<1000)?'25px':'30px',float:'right'}} alt=''/>
+                                        curr[2].map((i, indx)=>{
+                                            return <img src={i} style={{width:(window.innerWidth<1000)?'25px':'30px',float:'right'}} alt={curr[0]+indx} key={curr[0]+indx} />
                                         })
                                     }
                                 </div>

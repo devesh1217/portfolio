@@ -69,13 +69,15 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
+  max-width: 100%;
 }
 .proj-tech img {
   width: 30px;
 }
 .proj-desc {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 20px;
 }
 .yellow {
@@ -86,7 +88,7 @@
   color: #82bcfb;
   font-weight: 700;
 }
-@media screen and (width<1000px) {
+@media screen and (orientation : portrait) {
   .odd {
     flex-direction: column-reverse;
   }
@@ -100,9 +102,10 @@
   }
   .proj-link,.proj-tech{
     font-size: 16px;
+    gap: 10px;
   }
   .proj-desc{
-    font-size: 19px;
+    font-size: 17px;
   }
   .proj-name{
     font-size: 28px;

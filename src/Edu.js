@@ -40,7 +40,7 @@ function Edu() {
                 <div id="edu-right">
                     {eduData.map((curr)=>{
                         return(
-                            <div className="edu-data" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <div className="edu-data" data-aos="zoom-in-up" data-aos-duration="1000" key={curr.classNameShort}>
                                 <div className="edu-upper">
                                     <div className="degree">{(window.innerWidth>1000)?curr.classNameFull:curr.classNameShort}</div>
                                     <div className="year">{curr.year}</div>

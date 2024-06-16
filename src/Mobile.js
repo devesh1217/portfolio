@@ -21,13 +21,12 @@ function Mobile({ isOpen, setIsOpen, handleClick }) {
             </div>
             <div id="menu-bottom">
                 <div id="mobile-social">
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/devesh1217/"><img src={linkedIn}
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devesh1217/"><img src={linkedIn}
                         alt="linkedin" /></a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/devesh1217"><img src={git} alt="GitHub" /></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/devesh_1217/"><img src={insta}
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/devesh1217"><img src={git} alt="GitHub" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devesh_1217/"><img src={insta}
                         alt="Instagram" /></a>
-                    <a target="_blank" rel="noreferrer"
-                        href="https://drive.google.com/file/d/1tk9GDpLO5NnjHXecfvpXQExENsQlLd7X/view?usp=sharing"><img
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1tk9GDpLO5NnjHXecfvpXQExENsQlLd7X/view?usp=sharing"><img
                             src={download} alt="Download Resume" title="Download Resume" /></a>
                 </div>
                 <div id="cp">&copy; 2023. All rights are reserved.</div>

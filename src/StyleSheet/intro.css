@@ -133,7 +133,7 @@
     float: right;
     gap: 20px;
 }
-@media screen and (width<1000px) {
+@media screen and (orientation : portrait) {
     #intro-content{
         flex-direction: column;
         justify-content: center;
@@ -163,7 +163,7 @@
         padding-left: 0;
     }
     #soft-skill-list,#tech-skill-list{
-        padding-left: 40px;
+        padding-left: 20px;
     }
     #who{
         font-size: 36px;

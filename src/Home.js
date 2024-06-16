@@ -17,12 +17,12 @@ export default function Home() {
                 <h2 className="header-desc">And I am a Passionate</h2>
                 <h2 className="header-desc"><span className='typed-text'><Typed strings={['Software Engineer','Full Stack Developer','Database Administrator','Programmer']} typeSpeed={150} loop/></span></h2>
                 <div id="social">
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/devesh1217/"><img src={linkedIn}
-                        alt="linkedin" rel="noreferrer" /></a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/devesh1217"><img src={git} alt="GitHub" /></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/devesh_1217/"><img src={insta}
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devesh1217/"><img src={linkedIn}
+                        alt="linkedin" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/devesh1217"><img src={git} alt="GitHub" /></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devesh_1217/"><img src={insta}
                         alt="Instagram" /></a>
-                    <a target="_blank" rel="noreferrer"
+                    <a target="_blank" rel="noopener noreferrer"
                         href="https://drive.google.com/file/d/1tk9GDpLO5NnjHXecfvpXQExENsQlLd7X/view?usp=sharing"><img
                             src={download} alt="Resume" title="Resume" /></a>
                 </div>

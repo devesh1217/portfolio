@@ -20,7 +20,7 @@ function Soft({isSoftOpen,setSoftOpen}) {
                         <ul id="soft-skill-list">
                             {softSkill.map((curr)=>{
                                 return(
-                                    <li>
+                                    <li key={curr[0]}>
                                         {curr[0]}<br /><span className="soft-skill-desc">{curr[1]}</span>
                                     </li>
                                 )

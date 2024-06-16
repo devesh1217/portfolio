@@ -94,53 +94,53 @@ function Work() {
                 {project.map((curr, index) => {
                     if ((index + 1) % 2 === 0) {
                         return (
-                            <div className="project odd">
+                            <div className="project odd" key={curr.name}>
                                 <div className="proj-detail" data-aos="zoom-in-right" data-aos-duration="1000">
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc" style={{ maxWidth: '500px' }}>{curr.desc}</div>
                                     <div className="proj-tech">Project Technologies: {curr.tech.map((icon, indx) => {
-                                        return (<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{ width: (curr.linkIcon === flask) ? '45px' : '30px' }} />)
+                                        return (<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{ width: (curr.linkIcon === flask) ? '45px' : '30px' }} key={indx} />)
                                     })}</div>
                                     <div className="proj-link">Project Link:
                                         {
                                             curr.repo &&
-                                            <a target="_blank"
-                                                href={curr.repo} rel='noreferrer'><img src={curr.repoIcon} alt="GitPage"
+                                            <a target="_blank" rel="noopener noreferrer"
+                                                href={curr.repo} ><img src={curr.repoIcon} alt="GitPage"
                                                     width="30px" />
                                             </a>
                                         }
-                                        <a target="_blank"
-                                            href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href={curr.link} ><img src={curr.linkIcon} alt="GitPage"
                                                 width="30px" /></a>
                                     </div>
                                 </div>
-                                <div className="proj-img" data-aos="zoom-in-left" data-aos-duration="1000"><a target="_blank"
-                                    href={curr.link} rel='noreferrer'><img src={curr.image} alt="" /></a>
+                                <div className="proj-img" data-aos="zoom-in-left" data-aos-duration="1000"><a target="_blank" rel="noopener noreferrer"
+                                    href={curr.link} ><img src={curr.image} alt="" /></a>
                                 </div>
                             </div>
                         )
                     } else {
                         return (
-                            <div className="project even">
-                                <div className="proj-img" data-aos="zoom-in-left" data-aos-duration="1000"><a target="_blank"
-                                    href={curr.link} rel='noreferrer'><img src={curr.image} alt="" /></a>
+                            <div className="project even" key={curr.name}>
+                                <div className="proj-img" data-aos="zoom-in-left" data-aos-duration="1000"><a target="_blank" rel="noopener noreferrer"
+                                    href={curr.link} ><img src={curr.image} alt="" /></a>
                                 </div>
                                 <div className="proj-detail" data-aos="zoom-in-right" data-aos-duration="1000">
                                     <div className="proj-name">{curr.name}</div>
                                     <div className="proj-desc" style={{ maxWidth: '500px' }}>{curr.desc}</div>
                                     <div className="proj-tech">Project Technologies: {curr.tech.map((icon, indx) => {
-                                        return (<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{ width: (curr.linkIcon === flask) ? '45px' : '30px' }} />)
+                                        return (<img src={icon} alt={curr.title[indx]} title={curr.title[indx]} style={{ width: (curr.linkIcon === flask) ? '45px' : '30px' }} key={indx}/>)
                                     })}</div>
                                     <div className="proj-link">Project Link:
                                         {
                                             curr.repo &&
-                                            <a target="_blank"
-                                                href={curr.repo} rel='noreferrer'><img src={curr.repoIcon} alt="GitPage"
+                                            <a target="_blank" rel="noopener noreferrer"
+                                                href={curr.repo} ><img src={curr.repoIcon} alt="GitPage"
                                                     width="30px" />
                                             </a>
                                         }
-                                        <a target="_blank"
-                                            href={curr.link} rel='noreferrer'><img src={curr.linkIcon} alt="GitPage"
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href={curr.link} ><img src={curr.linkIcon} alt="GitPage"
                                                 width="30px" /></a>
                                     </div>
                                 </div>

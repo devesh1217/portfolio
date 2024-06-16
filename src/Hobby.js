@@ -17,12 +17,12 @@ function Hobby({isHobbyOpen,setHobbyOpen}) {
             </div>
             <div className="intro-card-detail" style={{display:(isHobbyOpen)?'block':'none'}}>
                 <ul id="hobby-list">
-                    <li><div className="hobby-icon">📖</div> Reading (mainly Scriptures)</li>
-                    <li><div className="hobby-icon">🧘🏻</div> Yoga & Maditaion</li>
-                    <li><div className="hobby-icon">👨🏻‍🏫</div> Teaching</li>
-                    <li><div className="hobby-icon">🎶</div> Music & Playing Tabla</li>
-                    <li><div className="hobby-icon">🌱</div> Nature Exploration</li>
-                    <li><div className="hobby-icon">⚛️</div> Physics</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Reading'>📖</span></div> Reading (mainly Scriptures)</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Yoga'>🧘🏻</span></div> Yoga & Maditaion</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Teaching'>👨🏻‍🏫</span></div> Teaching</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Music'>🎶</span></div> Music & Playing Tabla</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Nature'>🌱</span></div> Nature Exploration</li>
+                    <li><div className="hobby-icon"><span role='img' aria-label='Physics'>⚛️</span></div> Physics</li>
                 </ul>
             </div>
         </div>

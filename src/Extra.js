@@ -1,20 +1,22 @@
-import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
-import ExtraCard from './ExtraCard';
-
+import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow'
 import './StyleSheet/extra.css'
 
+import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
+import ExtraCard from './ExtraCard';
+
+
 import basic from './Photo/basic.jpg'
 import advanced from './Photo/advanced.jpg'
 import gwoc from './Photo/GWOC.jpg'
 import ww from './Photo/Web Wonders.jpg'
 
-export default () => {
+const Extra = () => {
     const data = [
         {
             imgURL: ww,
@@ -48,7 +50,7 @@ export default () => {
                 effect={'coverflow'}
                 centeredSlides={true}
                 loop={true}
-                slidesPerView={2}
+                slidesPerView={window.innerWidth>1000?2:1}
                 coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
@@ -71,7 +73,7 @@ export default () => {
                 {
                     data.map(curr => {
                         return (
-                            <SwiperSlide>
+                            <SwiperSlide key={curr.title}>
                                 <ExtraCard {...curr} ></ExtraCard>
                             </SwiperSlide>
                         )
@@ -87,3 +89,5 @@ export default () => {
         </div>
     );
 };
+
+export default Extra;

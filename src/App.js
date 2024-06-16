@@ -20,7 +20,7 @@ function App() {
     const [isHobbyOpen, setHobbyOpen] = useState(false)
     const [isSoftOpen, setSoftOpen] = useState(false)
     const [isTechOpen, setTechOpen] = useState(false)
-    const [isWelcomeOpen, setWelcomeOpen] = useState(false)
+    const [isWelcomeOpen, setWelcomeOpen] = useState(true)
 
     useEffect(() => {
         Aos.init();
